@@ -2,15 +2,14 @@ generated: '2026-09-25'
 method: probed
 source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
 hosts:
-- host: forgeglobal.com
+- host: anyvoice.io
   https: true
   tls_version: TLSv1.3
-  cert_expires: Dec 18 16:17:45 2026 GMT
-  hsts: null
+  cert_expires: Nov 21 00:18:24 2026 GMT
+  hsts: false
 domains:
-- domain: forgeglobal.com
+- domain: anyvoice.io
   dnssec: false
   caa: []
-  spf: true
-  dmarc: true
-  dmarc_policy: none
+  spf: false
+  dmarc: false

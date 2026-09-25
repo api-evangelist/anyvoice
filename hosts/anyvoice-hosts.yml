@@ -3,22 +3,39 @@ method: derived
 source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
 generator: derive-hosts.py
 summary:
-  hosts: 1
-  own: 0
+  hosts: 2
+  own: 2
   other_domain: 0
-  platform: 1
+  platform: 0
   roles:
+  - api
   - website
 hosts:
-- host: forgeglobal.com
+- host: anyvoice.io
   found_by:
   - pointer
+  - probed
+  - contract-discovery
+  - well-known
   - vendor-detect
   types:
+  - TermsOfService
+  - PrivacyPolicy
+  - Login
   - Website
+  - Pricing
+  - Blog
   serves:
   - cdn
   vendor: cloudflare
-  registrable_domain: forgeglobal.com
+  registrable_domain: anyvoice.io
   role: website
-  relation: platform
+  relation: own
+- host: api.anyvoice.io
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: anyvoice.io
+  role: api
+  relation: own

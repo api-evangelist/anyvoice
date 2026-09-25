@@ -1,0 +1,39 @@
+generated: '2026-09-25'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://anyvoice.io/pricing
+sources:
+- https://anyvoice.io/pricing
+name: Anyvoice pricing
+audience: business-product
+pricing_basis: per-seat
+plans:
+- name: Free
+  price_text: $0
+  price: 0
+  description: 5,000 credits to start, 1 cloned voice, Standard voices, non-commercial trial use
+- name: Starter
+  price_text: $9.99 / month
+  price: 9.99
+  description: 100,000 credits / month, 3 cloned voices, commercial use allowed
+- name: Creator
+  price_text: $19.99 / month
+  price: 19.99
+  description: 220,000 credits / month, 6 cloned voices, commercial use allowed
+- name: Pro
+  price_text: $39.99 / month
+  price: 39.99
+  description: 450,000 credits / month, 12 cloned voices, commercial use allowed
+- name: Studio
+  price_text: $79.99 / month
+  price: 79.99
+  description: 950,000 credits / month, 25 cloned voices, commercial use allowed
+- name: Scale
+  price_text: $129 / month
+  price: 129
+  description: 1,600,000 credits / month, 40 cloned voices, commercial use allowed
+- name: Business
+  price_text: $199 / month
+  price: 199
+  description: 2,500,000 credits / month, 60 cloned voices, commercial use allowed
+docs: https://anyvoice.io/pricing
